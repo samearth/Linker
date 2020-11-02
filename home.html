@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="home" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Linker</title>
+
+    <link href="index.css" type = "text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div style="background: #353a40;">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom">
+		<a class="navbar-brand" href="/"><span class="brand">LINKER</span></a>
+		<ul class="navbar-nav ml-auto mt-2">
+				<li class="nav-item"><a href="profile.php">Profile</a></li>
+				<li> </li>
+		</ul>
+    </nav>
+    <div class= "container" style="height:20%">
+    <div class="newq">
+        <span class="question" id="q"><center>New Question?</center></span>
+        <form action="submitQuestion.php" method="post" class="newqform" id="f">
+             <center>   <br>
+                <div class="md-form">
+                        <i class="fas fa-pencil-alt prefix"></i>
+                        <textarea id="form10" name = "newquestion" class="md-textarea form-control" rows="3"></textarea>
+                      </div>
+                 <input type="submit" value="Submit" /></center><br>
+            </form>
+    </div>
+</div>
+
+
+</div>
+
+
+<div class="container">
+    <div class = "qs">
+		<center>
+		<iframe src="displayQuestions.php" width="650" height="400" frameBorder="0"></iframe></center>
+	</div></div>
+
+	
+	<div style = "padding : 10px" class="fixed-footer">
+        Copyright &copy; 2019 Linker
+     
+                <span style="float: right" class="nav-item"><a href="#">About Us</a></span>
+     </div>
+
+
+
+
+<script>
+
+document.getElementById("q").addEventListener("click", function () {
+    document.getElementById("f").classList.add("show-f")
+    
+});
+
+</script>
+
+
+</body>
+
+</html>
+
+
