@@ -8,7 +8,7 @@
 	<title>Linker</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-	<link href="index.css" type = "text/css" rel="stylesheet"/>
+	<link href="css/index.css" type = "text/css" rel="stylesheet"/>
 
 </head>
 
@@ -16,19 +16,19 @@
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<a class="navbar-brand" href="/"><span class="brand">LINKER</span></a>
 		<ul class="navbar-nav ml-auto mt-2">
-				<li class="nav-item"><a href="profile.php">Profile</a></li>
+				<li class="nav-item"><a href="php/profile.php">Profile</a></li>
 				<li> </li>
 				<li class="nav-item"><a href="#">About Us</a></li>
 		</ul>
 	</nav>
 
 	<div class="container">
-		<form action="submitQuestion.php" method="post">
+		<form action="php/submitQuestion.php" method="post">
 			Ask a new Question: <br><textarea rows = "5" cols = "50"
 				name = "newquestion"></textarea><br>
 			 <input type="submit" value="Submit" />
 		</form>
-		<iframe src="displayQuestions.php" width="650" height="400"></iframe>
+		<iframe src="php/displayQuestions.php" width="650" height="400"></iframe>
 	</div>
 	
 	<div class="fixed-footer">
